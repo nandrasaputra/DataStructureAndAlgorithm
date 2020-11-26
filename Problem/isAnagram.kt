@@ -1,3 +1,4 @@
+// We assumed that the string input is a alphabet from A~Z (contain no symbols or special characters) and lowercase.
 fun isAnagram(stringOne: String, stringTwo: String) : Boolean {
     if (stringOne.length != stringTwo.length) {
         return false
