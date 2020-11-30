@@ -1,3 +1,5 @@
+import java.util.*
+
 class MyGraph {
     private val listOfNodes = mutableListOf<GraphNode>()
     private val listOfEdges = mutableListOf<GraphEdge>()
@@ -87,6 +89,56 @@ class MyGraph {
                 print("$it ")
             }
             println("")
+        }
+    }
+
+    fun dfs() {
+        val nodeList = getNodeList()
+        if (nodeList.isEmpty()) {
+            return
+        }
+        val root = nodeList[0]
+        val visitedMap = mutableMapOf<Int, Boolean>()
+        val stack = Stack<GraphNode>()
+        visitedMap[root.value] = true
+        stack.push(root)
+
+        while (stack.isNotEmpty()) {
+            val nextGraph = stack.pop()
+            // Visit, In This Case We Just Print The Node Value
+            println(nextGraph.value)
+            val edgeList = nextGraph.edgeList
+            edgeList.forEach { graphEdge ->
+                if (visitedMap[graphEdge.toNode.value] != true) {
+                    visitedMap[graphEdge.toNode.value] = true
+                    stack.push(graphEdge.toNode)
+                }
+            }
+        }
+    }
+
+    fun bfs() {
+        val nodeList = getNodeList()
+        if (nodeList.isEmpty()) {
+            return
+        }
+        val root = nodeList[0]
+        val visitedMap = mutableMapOf<Int, Boolean>()
+        val queue: Queue<GraphNode> = LinkedList<GraphNode>()
+        visitedMap[root.value] = true
+        queue.add(root)
+
+        while (queue.isNotEmpty()) {
+            val nextGraph = queue.remove()
+            // Visit, In This Case We Just Print The Node Value
+            println(nextGraph.value)
+            val edgeList = nextGraph.edgeList
+            edgeList.forEach { graphEdge ->
+                if (visitedMap[graphEdge.toNode.value] != true) {
+                    visitedMap[graphEdge.toNode.value] = true
+                    queue.add(graphEdge.toNode)
+                }
+            }
         }
     }
 
