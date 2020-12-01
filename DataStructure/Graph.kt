@@ -40,6 +40,10 @@ class MyGraph {
         listOfEdges.add(newEdge)
     }
 
+    fun getNodeList() : List<GraphNode> {
+        return listOfNodes
+    }
+
     fun getEdgeList() : List<GraphEdge> {
         return listOfEdges
     }
