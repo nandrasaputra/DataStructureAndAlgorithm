@@ -70,3 +70,8 @@ class NQueen(n: Int) {
         return true
     }
 }
+
+fun main() {
+    val nQueen = NQueen(4)
+    nQueen.findAllNQueenSolution()
+}
