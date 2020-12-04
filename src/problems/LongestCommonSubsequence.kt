@@ -1,4 +1,5 @@
 // Longest Common Subsequence
+// LCS of aabcccd and aabcccdd would be 3 (three c)
 fun findLCS(stringOne: String, stringTwo: String) : Int {
     val m = stringOne.length
     val n = stringTwo.length
