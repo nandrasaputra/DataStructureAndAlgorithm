@@ -68,6 +68,48 @@ class SinglyLinkedList<T> {
         }
 
     }
+
+    fun reverseLinkList() {
+        if (head == null) {
+            return
+        }
+        reverseNode(head!!, null)
+    }
+
+    private fun reverseNode(node: SinglyNode<T>, next: SinglyNode<T>?) {
+        if (node.next != null) {
+            val normalNext = node.next!!
+            node.next = next
+            reverseNode(normalNext, node)
+        } else {
+            node.next = next
+            head = node
+        }
+    }
+
+    fun printAllElement() {
+        if (head == null) {
+            return
+        }
+        printElement(head!!)
+    }
+
+    private fun printElement(node: SinglyNode<T>) {
+        println(node.data)
+        if (node.next != null) {
+            printElement(node.next!!)
+        }
+    }
 }
 
 class SinglyNode<T> (val data: T, var next: SinglyNode<T>?)
+
+fun main() {
+    val linkedList = SinglyLinkedList<Int>()
+    linkedList.appendToTail(1)
+    linkedList.appendToTail(2)
+    linkedList.appendToTail(3)
+    linkedList.printAllElement()
+    linkedList.reverseLinkList()
+    linkedList.printAllElement()
+}
