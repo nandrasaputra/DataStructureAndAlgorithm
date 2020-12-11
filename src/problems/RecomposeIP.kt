@@ -1,5 +1,7 @@
 package problems
 
+// We asume that the max possible number is 256
+
 fun recomposeIP(stringIp: String) : List<IntArray> {
     val result = mutableListOf<IntArray>()
     findPath(IntArray(4), 0, stringIp, result)
