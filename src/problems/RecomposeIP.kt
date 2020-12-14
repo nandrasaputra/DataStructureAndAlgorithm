@@ -2,6 +2,9 @@ package problems
 
 // We asume that the max possible number is 256
 
+// Given a string of ip address without . and give back all possible valid ip address
+// example: 4444 would be 4.4.4.4
+
 fun recomposeIP(stringIp: String) : List<IntArray> {
     val result = mutableListOf<IntArray>()
     findPath(IntArray(4), 0, stringIp, result)
