@@ -4,6 +4,7 @@ package problems
 
 // Given a string of ip address without . and give back all possible valid ip address
 // example: 4444 would be 4.4.4.4
+// 12345678 would be : 1.234.56.78, 12.34.56.78, 123.4.56.78, 123.45.6.78 , 123.45.67.8
 
 fun recomposeIP(stringIp: String) : List<IntArray> {
     val result = mutableListOf<IntArray>()
@@ -50,8 +51,6 @@ private fun findPath(currentPath: IntArray, currentPathIndex: Int, stringIPLeft:
         } else {
             continue
         }
-
-
     }
 }
 
@@ -65,7 +64,7 @@ private fun isPathValid(currentPathIndex: Int, stringIPLeft: String, tempPath: S
 }
 
 fun main() {
-    val list = recomposeIP("255112")
+    val list = recomposeIP("12345678")
     list.forEach { intArray ->
         val ipAddress = intArray.joinToString(".")
         println(ipAddress)
