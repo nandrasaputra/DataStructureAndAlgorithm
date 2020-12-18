@@ -1,5 +1,12 @@
 package problems.hackerrank
 
+import java.util.*
+
+/*
+* HackerRank Problem : Max Min
+* https://www.hackerrank.com/challenges/angry-children/problem
+* */
+
 fun maxMin(k: Int, arr: Array<Int>): Int {
 
     val n = arr.size
@@ -20,4 +27,22 @@ fun maxMin(k: Int, arr: Array<Int>): Int {
 
     return answer
 
+}
+
+fun main(args: Array<String>) {
+    val scan = Scanner(System.`in`)
+
+    val n = scan.nextLine().trim().toInt()
+
+    val k = scan.nextLine().trim().toInt()
+
+    val arr = Array<Int>(n, { 0 })
+    for (i in 0 until n) {
+        val arrItem = scan.nextLine().trim().toInt()
+        arr[i] = arrItem
+    }
+
+    val result = maxMin(k, arr)
+
+    println(result)
 }
