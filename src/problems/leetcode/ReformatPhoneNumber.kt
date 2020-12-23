@@ -19,22 +19,47 @@ object ReformatPhoneNumber {
     class Solution {
         fun reformatNumber(number: String): String {
             val pattern = Regex("[0-9]")
-            val number = StringBuilder()
+            val numberStringBuilder = StringBuilder()
             number.forEach {
                 val num = it.toString()
                 if (pattern.matches(num)) {
-                    number.append(num)
+                    numberStringBuilder.append(num)
                 }
             }
 
-            return getFormattedNumber(number.toString())
+            return getFormattedNumber(numberStringBuilder.toString())
         }
 
         private fun getFormattedNumber(number: String) : String {
-            val remainder = number.length % 3
-            val normalNumber = number.substring(0, number.length-3)
-            val remainderNumber = number
-            return ""
+            val result = StringBuilder()
+            val remainder = StringBuilder().append(number)
+            while (remainder.isNotEmpty()) {
+                if (remainder.length >= 4) {
+                    if (remainder.length == 4) {
+                        val firstPart = remainder.subSequence(0..1)
+                        val secondPart = remainder.subSequence(2..3)
+                        result.append("-$firstPart-$secondPart")
+                        remainder.clear()
+                    } else {
+                        val numberPart = remainder.subSequence(0..2)
+                        result.append("-$numberPart")
+                        remainder.delete(0, 3)
+                    }
+                } else {
+                    result.append("-$remainder")
+                    remainder.clear()
+                }
+            }
+
+            if (result.length > 1) {
+                result.delete(0,1)
+            }
+
+            return result.toString()
         }
     }
+}
+
+fun main() {
+    print(ReformatPhoneNumber.Solution().reformatNumber("1234"))
 }
