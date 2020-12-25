@@ -23,8 +23,7 @@ object MissingNumber {
             nums.forEach {
                 actualSumNumber += it
             }
-            val missingNumber = expectedSumNumber - actualSumNumber
-            return missingNumber
+            return expectedSumNumber - actualSumNumber
         }
     }
 }
