@@ -8,36 +8,20 @@ package problems.leetcode
 object SumII {
     class Solution {
         fun fourSumCount(A: IntArray, B: IntArray, C: IntArray, D: IntArray): Int {
-            val x = mutableMapOf<Int, Int>()
+            val abSumMap = mutableMapOf<Int, Int>()
+            var result = 0
             for (aElement in A) {
                 for (bElement in B) {
-                    val count = x[aElement + bElement]
-                    if (count != null) {
-                        x[aElement + bElement] = count + 1
-                    } else {
-                        x[aElement + bElement] = 1
-                    }
+                    abSumMap[aElement + bElement] = abSumMap.getOrDefault(aElement + bElement, 0) + 1
                 }
             }
 
-            val y = mutableMapOf<Int, Int>()
             for (cElement in C) {
                 for (dElement in D) {
-                    val count = y[cElement + dElement]
-                    if (count != null) {
-                        y[cElement + dElement] = count + 1
-                    } else {
-                        y[cElement + dElement] = 1
+                    val cdSum = cElement + dElement
+                    if (abSumMap.containsKey(-cdSum)) {
+                        result += abSumMap[-cdSum]!!
                     }
-                }
-            }
-
-            var result = 0
-
-            for (key in x.keys) {
-                val element = y[-key]
-                if (element != null) {
-                    result += x[key]!! * y[-key]!!
                 }
             }
 
