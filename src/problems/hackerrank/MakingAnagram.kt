@@ -3,6 +3,11 @@ package problems.hackerrank
 import java.util.*
 import kotlin.math.abs
 
+/*
+*   HackerRank Problem : Strings: Making Anagrams
+*   https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+* */
+
 fun makeAnagram(a: String, b: String): Int {
     val baseChar = 'a'.toInt()
     val charCountArrayA = IntArray(26) {0}
