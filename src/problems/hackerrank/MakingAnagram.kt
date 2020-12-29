@@ -1,10 +1,31 @@
 package problems.hackerrank
 
 import java.util.*
+import kotlin.math.abs
 
 fun makeAnagram(a: String, b: String): Int {
+    val baseChar = 'a'.toInt()
+    val charCountArrayA = IntArray(26) {0}
+    val charCountArrayB = IntArray(26) {0}
+    a.forEach {
+        val arrayIndex = it.toInt() - baseChar
+        charCountArrayA[arrayIndex]++
+    }
 
-    return 0
+    b.forEach {
+        val arrayIndex = it.toInt() - baseChar
+        charCountArrayB[arrayIndex]++
+    }
+
+    var result = 0
+
+    for (index in charCountArrayA.indices) {
+        val difference = abs(charCountArrayA[index] - charCountArrayB[index])
+        result += difference
+    }
+
+    return result
+
 }
 
 fun main(args: Array<String>) {
