@@ -22,6 +22,7 @@ fun sherlockAndAnagrams(s: String): Int {
     var anagramPair = 0
 
     for (value in wordMap.values) {
+        // the formula come from the combination formula (simplified) -> nC2
         anagramPair += (value * (value - 1)) / 2
     }
 
