@@ -3,7 +3,11 @@ package problems.hackerrank
 import java.util.*
 import kotlin.collections.*
 
-// Complete the sherlockAndAnagrams function below.
+/*
+*   HackerRank Problem : SherlockAndAnagrams
+*   https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps
+* */
+
 fun sherlockAndAnagrams(s: String): Int {
 
     val wordMap = mutableMapOf<String, Int>()
