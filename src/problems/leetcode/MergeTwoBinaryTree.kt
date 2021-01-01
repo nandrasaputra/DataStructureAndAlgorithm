@@ -25,24 +25,23 @@ object MergeTwoBinaryTree {
         }
     class Solution {
         fun mergeTrees(t1: TreeNode?, t2: TreeNode?): TreeNode? {
-            val t1Queue: Queue<TreeNode> = LinkedList()
-            val t2Queue: Queue<TreeNode> = LinkedList()
-            val newTreeResult = TreeNode(0)
-
-            t1Queue.add(t1)
-            t2Queue.add(t2)
-
-            while (t1Queue.isNotEmpty()) {
-                val currentT1TreeNode = t1Queue.remove()
-                currentT1TreeNode.left?.let {
-                    t1Queue.add(it)
-                }
-                currentT1TreeNode.right?.let {
-                    t1Queue.add(it)
-                }
-            }
-
-            return newTreeResult
+            return mergeNode(t1, t2)
         }
-    }
+
+        private fun mergeNode(t1: TreeNode?, t2: TreeNode?) : TreeNode? {
+            return if (t1 != null && t2 != null) {
+                val nodeValueSum = t1.`val` + t2.`val`
+                val newNode = TreeNode(nodeValueSum)
+                newNode.left = mergeNode(t1.left, t2.left)
+                newNode.right = mergeNode(t1.right, t2.right)
+                return newNode
+            } else if (t1 != null && t2 == null) {
+                t1
+            } else if (t1 == null && t2 != null) {
+                t2
+            } else {
+                null
+            }
+        }
+     }
 }
