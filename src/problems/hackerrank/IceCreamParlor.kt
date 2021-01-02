@@ -2,6 +2,10 @@ package problems.hackerrank
 
 import java.util.*
 
+/*
+*   HackerRank Problem : Hash Tables: Ice Cream Parlor
+*   https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=search
+* */
 fun whatFlavors(cost: Array<Int>, money: Int): Unit {
 
 }
