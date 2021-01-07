@@ -2,6 +2,11 @@ package problems.hackerrank
 
 import java.util.*
 
+/*
+*   HackerRank: LonelyInteger
+*   https://www.hackerrank.com/challenges/lonely-integer/problem
+*/
+
 fun lonelyinteger(a: Array<Int>): Int {
     var result = 0
     for (element in a) {
