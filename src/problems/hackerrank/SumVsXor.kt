@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank Problem: Sum Vs Xor
+*   https://www.hackerrank.com/challenges/sum-vs-xor/problem
+*/
+
 fun sumXor(n: Long): Long {
     if (n == (0.toLong())) {
         return 1
