@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Sequence Equation
+*   https://www.hackerrank.com/challenges/permutation-equation/problem
+*/
+
 fun permutationEquation(p: Array<Int>): Array<Int> {
     val n = p.size
     val result = Array(n){0}
