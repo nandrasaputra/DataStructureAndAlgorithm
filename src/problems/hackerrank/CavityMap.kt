@@ -2,6 +2,11 @@ package problems.hackerrank
 
 import java.lang.StringBuilder
 
+/*
+*   HackerRank: Cavity Map
+*   https://www.hackerrank.com/challenges/cavity-map/problem
+* */
+
 fun cavityMap(grid: Array<String>): Array<String> {
     val n = grid.size
     if (n in 0..2) {
