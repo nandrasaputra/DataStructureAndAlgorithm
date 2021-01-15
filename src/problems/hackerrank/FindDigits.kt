@@ -1,5 +1,9 @@
 package problems.hackerrank
 
+/*
+*   hackerRank: Find Digits
+*   https://www.hackerrank.com/challenges/find-digits/problem
+* */
 fun findDigits(n: Int): Int {
     var count = 0
     var remainingNumber = n
