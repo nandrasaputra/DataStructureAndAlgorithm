@@ -1,5 +1,9 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Cut The Stick
+*   https://www.hackerrank.com/challenges/cut-the-sticks/problem
+*/
 fun cutTheSticks(arr: Array<Int>): Array<Int> {
     var currentStick = arr.size
     val resultList = mutableListOf<Int>()
