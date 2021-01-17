@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Closest Number
+*   https://www.hackerrank.com/challenges/closest-numbers/problem
+*/
+
 fun closestNumbers(arr: Array<Int>): Array<Int> {
     arr.sort()
     var difference = Int.MAX_VALUE
