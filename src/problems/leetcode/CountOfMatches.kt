@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Leetcode: Count of Mathec in Tournament
+*   https://leetcode.com/problems/count-of-matches-in-tournament/submissions/
+*/
+
 object CountOfMatches {
     class Solution {
         fun numberOfMatches(n: Int): Int {
