@@ -1,3 +1,5 @@
+package problems.others
+
 class NQueen(n: Int) {
     private val board = Array(n) { IntArray(n) {0} }
 
