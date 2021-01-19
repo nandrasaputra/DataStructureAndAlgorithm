@@ -7,6 +7,11 @@ import java.util.*
 *   https://www.hackerrank.com/challenges/lonely-integer/problem
 */
 
+/*
+*   if we xor a number with itself, the result will be 0
+*   if we xor a number with 0, the result will be the number itself
+*   we could use this approach to get the lonely number (assuming the input always odd)
+* */
 fun lonelyinteger(a: Array<Int>): Int {
     var result = 0
     for (element in a) {
