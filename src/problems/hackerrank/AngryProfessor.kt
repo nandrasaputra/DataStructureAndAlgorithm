@@ -5,6 +5,8 @@ package problems.hackerrank
 *   https://www.hackerrank.com/challenges/angry-professor/problem
 */
 
+// if array element is less than or equal to 0 then
+// the student is not laye
 fun angryProfessor(k: Int, a: Array<Int>): String {
     var studentPresent = 0
     for (element in a) {
