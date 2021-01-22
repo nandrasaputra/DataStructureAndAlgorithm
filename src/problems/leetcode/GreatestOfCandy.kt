@@ -1,5 +1,9 @@
 package problems.leetcode
 
+/*
+*   Leetcode: Kids with the Greatest Number of Candies
+*   https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+*/
 object GreatestOfCandy {
     class Solution {
         fun kidsWithCandies(candies: IntArray, extraCandies: Int): BooleanArray {
