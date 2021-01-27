@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   Hacker Rank: Electronics Shop
+*   https://www.hackerrank.com/challenges/electronics-shop/problem
+*/
+
 fun getMoneySpent(keyboards: Array<Int>, drives: Array<Int>, b: Int): Int {
     var maxValue = -1
     keyboards.sortDescending()
