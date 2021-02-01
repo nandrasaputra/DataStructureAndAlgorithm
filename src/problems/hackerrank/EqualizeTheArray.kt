@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Equalize The Array
+*   https://www.hackerrank.com/challenges/equality-in-a-array/problem
+*/
+
 fun equalizeArray(arr: Array<Int>): Int {
     val numberMap = mutableMapOf<Int, Int>()
     arr.forEach {
