@@ -6,7 +6,9 @@ package problems.hackerrank
 */
 
 fun catAndMouse(x: Int, y: Int, z: Int): String {
+    // Calculate the distance between Cat A and Mouse C
     val catADistance = Math.abs(x-z)
+    // Calculate the distance between Cat B and Mouse C
     val catBDistance = Math.abs((y-z))
 
     if (catADistance == catBDistance) {
