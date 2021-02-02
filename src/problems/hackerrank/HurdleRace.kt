@@ -1,6 +1,9 @@
 package problems.hackerrank
 
-// Complete the hurdleRace function below.
+/*
+*   HackerRank: Hurdle Race
+*   https://www.hackerrank.com/challenges/the-hurdle-race/problem
+*/
 fun hurdleRace(k: Int, height: Array<Int>): Int {
     val hurdleMaxHeight = height.max() ?: 0
     if (k >= hurdleMaxHeight) {
