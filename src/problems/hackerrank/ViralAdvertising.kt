@@ -1,5 +1,9 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Viral Advertising
+*   https://www.hackerrank.com/challenges/strange-advertising/problem
+*/
 fun viralAdvertising(n: Int): Int {
     var cumulativeLike = 2
     var people = 5
