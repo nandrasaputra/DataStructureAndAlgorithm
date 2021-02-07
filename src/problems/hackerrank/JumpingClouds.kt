@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Jumping Clouds
+*   https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited/problem
+*/
+
 fun jumpingOnClouds(c: Array<Int>, k: Int): Int {
     val n = c.size
     var currentIndexPos = 0
