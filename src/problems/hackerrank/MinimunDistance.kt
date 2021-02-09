@@ -1,6 +1,9 @@
 package problems.hackerrank
 
-import kotlin.math.min
+/*
+*   HackerRank: Minimum Distance
+*   https://www.hackerrank.com/challenges/minimum-distances/problem
+*/
 
 fun minimumDistances(a: Array<Int>): Int {
     val numberToIndexMap = mutableMapOf<Int, Int>()
