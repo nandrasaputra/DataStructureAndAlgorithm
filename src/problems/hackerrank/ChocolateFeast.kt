@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Chocolate Feast
+*   https://www.hackerrank.com/challenges/chocolate-feast/problem
+*/
+
 fun chocolateFeast(n: Int, c: Int, m: Int): Int {
     var chocolateCount = n/c
     var chocolateNow = chocolateCount
