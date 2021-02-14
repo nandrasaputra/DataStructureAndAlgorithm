@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Beautiful Triplets
+*   https://www.hackerrank.com/challenges/beautiful-triplets/problem
+*/
+
 fun beautifulTriplets(d: Int, arr: Array<Int>): Int {
     var tripletsCount = 0
     val numberSet = mutableSetOf<Int>()
