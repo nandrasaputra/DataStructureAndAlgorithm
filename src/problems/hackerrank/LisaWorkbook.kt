@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Lisa Workbook
+*   https://www.hackerrank.com/challenges/lisa-workbook/problem
+*/
+
 fun workbook(n: Int, k: Int, arr: Array<Int>): Int {
     var numberOfSpecialProblem = 0
     var currentPage = 1
