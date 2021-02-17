@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Strange Counter
+*   https://www.hackerrank.com/challenges/strange-code/problem
+*/
+
 fun strangeCounter(t: Long): Long {
     var time = t
     var factor = 3
