@@ -1,4 +1,8 @@
 package problems.hackerrank
+/*
+*   HackerRank: Halloween Sale
+*   https://www.hackerrank.com/challenges/halloween-sale/problem
+*/
 
 fun howManyGames(p: Int, d: Int, m: Int, s: Int): Int {
     var count = 0
