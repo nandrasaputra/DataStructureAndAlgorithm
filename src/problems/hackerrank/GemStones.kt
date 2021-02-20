@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: GemStones
+*   https://www.hackerrank.com/challenges/gem-stones/problem
+*/
+
 fun gemstones(arr: Array<String>): Int {
     val arrayOfMineral = Array<Int>(26) {0}
     val base = 'a'.toInt()
