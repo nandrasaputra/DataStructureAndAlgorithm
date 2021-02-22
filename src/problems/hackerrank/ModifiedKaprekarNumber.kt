@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Modified Kaprekar Number
+*   https://www.hackerrank.com/challenges/kaprekar-numbers/problem
+*/
+
 fun kaprekarNumbers(p: Int, q: Int): Unit {
     val kaprekarNumberList: MutableList<Int> = mutableListOf()
     for (number in p..q) {
