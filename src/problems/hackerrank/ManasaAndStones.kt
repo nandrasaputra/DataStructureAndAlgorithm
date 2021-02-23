@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Manasa and Stones
+*   https://www.hackerrank.com/challenges/manasa-and-stones/problem
+*/
+
 fun stones(n: Int, a: Int, b: Int): Array<Int> {
     val setOfEndStone = mutableSetOf<Int>()
     for(i in 0 until n) {
