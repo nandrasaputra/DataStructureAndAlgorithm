@@ -2,6 +2,11 @@ package problems.hackerrank
 
 import java.util.*
 
+/*
+*   HackerRank: HackerRank In a String
+*   https://www.hackerrank.com/challenges/hackerrank-in-a-string/problem
+*/
+
 fun hackerrankInString(s: String): String {
     val charQueue: Queue<Char> = LinkedList()
     charQueue.addAll("hackerrank".toCharArray().toList())
