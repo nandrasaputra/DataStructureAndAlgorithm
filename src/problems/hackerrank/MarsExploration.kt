@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Mars Exploration
+*   https://www.hackerrank.com/challenges/mars-exploration/problem
+*/
+
 fun marsExploration(s: String): Int {
     var count = 0
     for (index in s.indices) {
