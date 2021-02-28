@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Funny String
+*   https://www.hackerrank.com/challenges/funny-string/problem
+*/
+
 fun funnyString(s: String): String {
     val reverseString = s.reversed()
     var firstPointer = 0
