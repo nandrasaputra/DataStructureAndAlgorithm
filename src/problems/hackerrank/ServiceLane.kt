@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Service Lane
+*   https://www.hackerrank.com/challenges/service-lane/problem
+*/
+
 fun serviceLane(n: Int, width: Array<Int>, cases: Array<Array<Int>>): Array<Int> {
     val result = mutableListOf<Int>()
     for (index in cases.indices) {
