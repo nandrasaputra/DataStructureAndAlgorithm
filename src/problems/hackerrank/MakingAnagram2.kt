@@ -6,6 +6,8 @@ package problems.hackerrank
 */
 
 fun makingAnagrams(s1: String, s2: String): Int {
+    // because the string input is a ASCII character from a~z, we could use array to store each char value.
+    // to get the array index of each char, we could subtract it with char the int value of 'a'
     val baseChar = 'a'.toInt()
     val charCountArrayA = IntArray(26) {0}
     val charCountArrayB = IntArray(26) {0}
