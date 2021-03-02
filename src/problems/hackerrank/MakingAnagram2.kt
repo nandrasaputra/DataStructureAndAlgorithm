@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Making Anagram
+*   https://www.hackerrank.com/challenges/making-anagrams/problem
+*/
+
 fun makingAnagrams(s1: String, s2: String): Int {
     val baseChar = 'a'.toInt()
     val charCountArrayA = IntArray(26) {0}
