@@ -27,22 +27,10 @@ fun makeAnagram(a: String, b: String): Int {
     var result = 0
 
     for (index in charCountArrayA.indices) {
-        val difference = abs(charCountArrayA[index] - charCountArrayB[index])
+        val difference = Math.abs(charCountArrayA[index] - charCountArrayB[index])
         result += difference
     }
 
     return result
 
-}
-
-fun main(args: Array<String>) {
-    val scan = Scanner(System.`in`)
-
-    val a = scan.nextLine()
-
-    val b = scan.nextLine()
-
-    val res = makeAnagram(a, b)
-
-    println(res)
 }
