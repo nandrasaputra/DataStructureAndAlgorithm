@@ -1,9 +1,9 @@
 package problems.hackerrank
 
-import kotlin.reflect.jvm.internal.impl.builtins.StandardNames.FqNames.string
-
-
-
+/*
+*   HackerRank: The Time In The World
+*   https://www.hackerrank.com/challenges/the-time-in-words/problem
+*/
 
 fun timeInWords(h: Int, m: Int): String {
     val wordsArray: Array<String> = arrayOf(
