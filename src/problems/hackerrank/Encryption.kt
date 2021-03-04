@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Encryption
+*   https://www.hackerrank.com/challenges/encryption/problem
+*/
+
 fun encryption(s: String): String {
     val stringWithoutSpace = s.replace("\\s".toRegex(), "")
     var row = Math.floor(Math.sqrt(stringWithoutSpace.length.toDouble())).toInt()
