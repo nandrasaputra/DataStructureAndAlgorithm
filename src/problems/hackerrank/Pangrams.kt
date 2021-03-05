@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Pangrams
+*   https://www.hackerrank.com/challenges/pangrams/problem
+*/
+
 fun pangrams(s: String): String {
     val baseIndex = 'a'.toInt()
     val charArray = IntArray(26) {0}
