@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Sherlock and Array
+*   https://www.hackerrank.com/challenges/sherlock-and-array/problem
+*/
+
 fun balancedSums(arr: Array<Int>): String {
     var leftIndex = 0
     var rightIndex = arr.size-1
