@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: The Love Letter Mysteries
+*   https://www.hackerrank.com/challenges/the-love-letter-mystery/problem
+*/
+
 fun theLoveLetterMystery(s: String): Int {
     var leftIndex = 0
     var rightIndex = s.length-1
