@@ -1,6 +1,9 @@
 package problems.hackerrank
 
-import kotlin.math.max
+/*
+*   HackerRank: Mark and Toys
+*   https://www.hackerrank.com/challenges/mark-and-toys/problem
+*/
 
 // Complete the maximumToys function below.
 fun maximumToys(prices: Array<Int>, k: Int): Int {
