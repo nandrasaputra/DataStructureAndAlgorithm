@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Marcs Cakewalk
+*   https://www.hackerrank.com/challenges/marcs-cakewalk/problem
+*/
+
 fun marcsCakewalk(calorie: Array<Int>): Long {
     var totalMiles: Long = 0
     val sortedCalorie = calorie.sortedArrayDescending()
