@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Jim and The Orders
+*   https://www.hackerrank.com/challenges/jim-and-the-orders/problem
+*/
+
 fun jimOrders(orders: Array<Array<Int>>): Array<Int> {
     val result = Array<Int>(orders.size) {0}
     val ordersSorted = orders.sortedBy {
