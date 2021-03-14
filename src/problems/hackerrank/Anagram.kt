@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Anagram
+*   https://www.hackerrank.com/challenges/anagram/problem
+*/
+
 fun anagram(s: String): Int {
     if (s.length % 2 != 0) {
         return -1
