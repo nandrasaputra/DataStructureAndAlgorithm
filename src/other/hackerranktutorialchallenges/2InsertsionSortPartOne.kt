@@ -1,5 +1,10 @@
 package other.hackerranktutorialchallenges
 
+/*
+*   HackerRank: Insertion Sort - Part 1
+*   https://www.hackerrank.com/challenges/insertionsort1/problem
+*/
+
 fun insertionSort1(n: Int, arr: Array<Int>): Unit {
     val savedElement = arr[arr.size-1]
     for(index in (arr.size-2) downTo 0) {
