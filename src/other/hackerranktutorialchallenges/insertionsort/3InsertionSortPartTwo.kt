@@ -1,5 +1,10 @@
 package other.hackerranktutorialchallenges.insertionsort
 
+/*
+*   HackerRank: Insertion Sort - Part 2
+*   https://www.hackerrank.com/challenges/insertionsort2/problem
+*/
+
 fun insertionSort2(n: Int, arr: Array<Int>): Unit {
     var unsortedIndex = 1
     while (unsortedIndex <= arr.size-1) {
