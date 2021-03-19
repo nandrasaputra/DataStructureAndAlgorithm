@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Game of Thrones - I
+*   https://www.hackerrank.com/challenges/game-of-thrones/problem
+*/
+
 fun gameOfThrones(s: String): String {
     val charMap = mutableMapOf<Char, Int>()
     s.forEach {
