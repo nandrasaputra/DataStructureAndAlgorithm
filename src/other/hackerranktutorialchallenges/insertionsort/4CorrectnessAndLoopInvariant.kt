@@ -1,5 +1,10 @@
 package other.hackerranktutorialchallenges.insertionsort
 
+/*
+*   HackerRank Tutorial (Insertion Sort) 4 : Correctness and Loop Invariant
+*   https://www.hackerrank.com/challenges/correctness-invariant/problem
+*/
+
 fun insertionSort(A: IntArray) {
     for (i in 1 until A.size) {
         val value = A[i]
