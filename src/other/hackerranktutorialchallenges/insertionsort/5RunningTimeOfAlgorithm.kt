@@ -1,5 +1,10 @@
 package other.hackerranktutorialchallenges.insertionsort
 
+/*
+*   HackerRank: Insertion Sort Tutorial 5, Running Time of Algorithm
+*   https://www.hackerrank.com/challenges/runningtime/problem
+*/
+
 fun runningTime(arr: IntArray): Int {
     var shiftCount = 0
     for (i in 1 until arr.size) {
