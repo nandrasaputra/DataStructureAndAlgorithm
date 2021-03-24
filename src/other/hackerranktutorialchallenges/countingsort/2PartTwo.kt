@@ -1,5 +1,10 @@
 package other.hackerranktutorialchallenges.countingsort
 
+/*
+*   HackerRank: Counting Sort Part 2
+*   https://www.hackerrank.com/challenges/countingsort2/problem
+*/
+
 fun countingSort2(arr: Array<Int>): Array<Int> {
     val countArray = Array(100) {0}
     arr.forEach {
