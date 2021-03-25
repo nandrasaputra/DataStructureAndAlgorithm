@@ -1,4 +1,4 @@
-package other.hackerranktutorialchallenges
+package other.hackerranktutorialchallenges.insertionsort
 
 /*
 *   HackerRank: Insertion Sort - Part 1
