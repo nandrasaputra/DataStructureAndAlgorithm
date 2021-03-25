@@ -1,5 +1,10 @@
 package other.hackerranktutorialchallenges.countingsort
 
+/*
+*   HackerRank: Counting Sort Part 3
+*   https://www.hackerrank.com/challenges/countingsort3/problem
+*/
+
 import java.util.*
 
 fun main(args: Array<String>) {
