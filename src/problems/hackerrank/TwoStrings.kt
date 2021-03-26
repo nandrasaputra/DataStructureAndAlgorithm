@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Two Strings
+*   https://www.hackerrank.com/challenges/two-strings/problem
+*/
+
 fun twoStrings(s1: String, s2: String): String {
     val firstCharMap = mutableMapOf<Char, Int>()
     s1.forEach {
