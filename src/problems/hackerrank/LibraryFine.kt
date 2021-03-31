@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Library Fine
+*   https://www.hackerrank.com/challenges/library-fine/problem
+*/
+
 fun libraryFine(d1: Int, m1: Int, y1: Int, d2: Int, m2: Int, y2: Int): Int {
     if (y1 != y2) {
         if (y1 > y2) {
