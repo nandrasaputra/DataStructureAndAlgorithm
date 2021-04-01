@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Strong Password
+*   https://www.hackerrank.com/challenges/strong-password/problem
+*/
+
 fun minimumNumber(n: Int, password: String): Int {
     var digitAddition = 0
     val upperCaseRegex = Regex("[A-Z]+")
