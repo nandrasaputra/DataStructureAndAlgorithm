@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Flatland Space Stations
+*   https://www.hackerrank.com/challenges/flatland-space-stations/problem
+*/
+
 fun flatlandSpaceStations(n: Int, c: Array<Int>): Int {
     var maxDistance: Int
     val sortedArray = c.sorted()
