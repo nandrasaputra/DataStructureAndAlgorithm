@@ -2,6 +2,11 @@ package problems.hackerrank
 
 import java.math.BigInteger
 
+/*
+*   HackerRank: ACM ICPC Team
+*   https://www.hackerrank.com/challenges/acm-icpc-team/problem
+*/
+
 fun acmTeam(topic: Array<String>): Array<Int> {
     var currentMaxSubject = 0
     var currentTeamCount = 0
