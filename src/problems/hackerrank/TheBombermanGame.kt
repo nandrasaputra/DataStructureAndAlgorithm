@@ -5,6 +5,7 @@ import java.lang.StringBuilder
 /*
 *   HackerRank: The Bomberman Game
 *   https://www.hackerrank.com/challenges/bomber-man/problem
+*   illustration: https://github.com/nandrasaputra/DataStructureAndAlgorithm/blob/main/utils/bomberman_illustration.png
 */
 
 fun bomberMan(n: Int, grid: Array<String>): Array<String> {
