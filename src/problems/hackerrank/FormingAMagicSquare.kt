@@ -1,5 +1,10 @@
 package problems.hackerrank
 
+/*
+*   HackerRank: Forming a Magic Square
+*   https://www.hackerrank.com/challenges/magic-square-forming/problem
+*/
+
 fun formingMagicSquare(s: Array<Array<Int>>): Int {
     var minimalTotalCost = Int.MAX_VALUE
     val allPossibleMagicSquare =
