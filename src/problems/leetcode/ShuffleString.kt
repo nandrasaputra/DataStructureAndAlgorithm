@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Shuffle String
+*   https://leetcode.com/problems/shuffle-string/
+*/
+
 object ShuffleString {
     fun restoreString(s: String, indices: IntArray): String {
         val resultStringBuilder = StringBuilder(s)
