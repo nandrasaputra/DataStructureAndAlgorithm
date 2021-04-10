@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   LeetCode: Richest Customer Wealth
+*   https://leetcode.com/problems/richest-customer-wealth/
+*/
+
 object RichestCustomerWealth {
     fun maximumWealth(accounts: Array<IntArray>): Int {
         var maxWealth = 0
