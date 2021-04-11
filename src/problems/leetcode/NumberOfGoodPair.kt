@@ -2,6 +2,11 @@ package problems.leetcode
 
 import java.math.BigInteger
 
+/*
+*   LeetCode: Number of Good Pair
+*   https://leetcode.com/problems/number-of-good-pairs/
+*/
+
 object NumberOfGoodPair {
     fun numIdenticalPairs(nums: IntArray): Int {
         var result = 0
