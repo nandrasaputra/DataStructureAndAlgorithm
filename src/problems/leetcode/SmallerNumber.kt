@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Leetcode: 1365. How Many Numbers Are Smaller Than the Current Number
+*   https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+*/
+
 object SmallerNumber {
     fun smallerNumbersThanCurrent(nums: IntArray): IntArray {
         val countMap = mutableMapOf<Int, Int>()
