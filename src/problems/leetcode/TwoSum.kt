@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Leetcode: 1. Two Sum
+*   https://leetcode.com/problems/two-sum/
+*/
+
 object TwoSum {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         for ((elementIndex, element) in nums.withIndex()) {
