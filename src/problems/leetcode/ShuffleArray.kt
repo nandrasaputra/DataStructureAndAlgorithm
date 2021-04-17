@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Leetcode: 1470. Shuffle the Array
+*   https://leetcode.com/problems/shuffle-the-array/
+*/
+
 object ShuffleArray {
     fun shuffle(nums: IntArray, n: Int): IntArray {
         val resultArray = IntArray(nums.size) {0}
