@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Leetcode: 1832. Check if the Sentence Is Pangram
+*   https://leetcode.com/problems/check-if-the-sentence-is-pangram/
+*/
+
 object CheckSentencePangram {
     fun checkIfPangram(sentence: String): Boolean {
         if(sentence.length < 26) {
