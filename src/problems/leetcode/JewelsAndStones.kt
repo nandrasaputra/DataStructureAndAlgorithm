@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Leetcode: 771. Jewels and Stones
+*   https://leetcode.com/problems/jewels-and-stones/
+*/
+
 object JewelsAndStones {
     fun numJewelsInStones(jewels: String, stones: String): Int {
         val charCountMap = mutableMapOf<Char, Int>()
