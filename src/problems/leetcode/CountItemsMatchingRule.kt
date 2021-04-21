@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Leetcode: 1773. Count Items Matching a Rule
+*   https://leetcode.com/problems/count-items-matching-a-rule/
+*/
+
 object CountItemsMatchingRule {
     fun countMatches(items: List<List<String>>, ruleKey: String, ruleValue: String): Int {
         var resultCount = 0
