@@ -6,32 +6,30 @@ package problems.leetcode
 * */
 
 object SumII {
-    class Solution {
-        fun fourSumCount(A: IntArray, B: IntArray, C: IntArray, D: IntArray): Int {
-            val abSumMap = mutableMapOf<Int, Int>()
-            var result = 0
-            for (aElement in A) {
-                for (bElement in B) {
-                    abSumMap[aElement + bElement] = abSumMap.getOrDefault(aElement + bElement, 0) + 1
-                }
+    fun fourSumCount(A: IntArray, B: IntArray, C: IntArray, D: IntArray): Int {
+        val abSumMap = mutableMapOf<Int, Int>()
+        var result = 0
+        for (aElement in A) {
+            for (bElement in B) {
+                abSumMap[aElement + bElement] = abSumMap.getOrDefault(aElement + bElement, 0) + 1
             }
-
-            for (cElement in C) {
-                for (dElement in D) {
-                    val cdSum = cElement + dElement
-                    if (abSumMap.containsKey(-cdSum)) {
-                        result += abSumMap[-cdSum]!!
-                    }
-                }
-            }
-
-            return result
         }
+
+        for (cElement in C) {
+            for (dElement in D) {
+                val cdSum = cElement + dElement
+                if (abSumMap.containsKey(-cdSum)) {
+                    result += abSumMap[-cdSum]!!
+                }
+            }
+        }
+
+        return result
     }
 }
 
 fun main() {
-    print(SumII.Solution().fourSumCount(
+    print(SumII.fourSumCount(
         intArrayOf(1,2),
         intArrayOf(-2,-1),
         intArrayOf(-1,2),
