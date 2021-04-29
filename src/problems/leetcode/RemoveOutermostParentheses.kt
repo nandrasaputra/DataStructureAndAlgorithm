@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   Leetcode: 1021. Remove Outermost Parentheses
+*   https://leetcode.com/problems/remove-outermost-parentheses/
+*/
+
 import kotlin.text.StringBuilder
 
 object RemoveOutermostParentheses {
