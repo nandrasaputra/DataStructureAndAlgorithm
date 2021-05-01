@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   leetcode: 832. Flipping an Image
+*   https://leetcode.com/problems/flipping-an-image/
+*/
+
 object FlipAndInvertImage {
     fun flipAndInvertImage(image: Array<IntArray>): Array<IntArray> {
         val resultArray = Array<IntArray>(image.size) { intArrayOf()}
