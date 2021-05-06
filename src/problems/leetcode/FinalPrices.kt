@@ -1,5 +1,10 @@
 package problems.leetcode
 
+/*
+*   leetcode: 1475. Final Prices With a Special Discount in a Shop
+*   https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
+*/
+
 object FinalPrices {
     fun finalPrices(prices: IntArray): IntArray {
         val result = IntArray(prices.size) {0}
