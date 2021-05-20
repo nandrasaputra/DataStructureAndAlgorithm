@@ -5,7 +5,7 @@ package problems.leetcode
 *   https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 */
 
-object LowestCommonAncestor {
+object LowestCommonAncestorBST {
     /**
      * Definition for a binary tree node.
      * class TreeNode(var `val`: Int = 0) {
