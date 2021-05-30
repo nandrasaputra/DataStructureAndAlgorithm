@@ -23,7 +23,7 @@ fun main() {
             }
         }
 
-        resultList.add(xorResultList.min() ?: 0)
+        resultList.add(xorResultList.minOrNull() ?: 0)
     }
 
     resultList.forEach {
