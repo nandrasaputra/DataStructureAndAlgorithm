@@ -27,12 +27,3 @@ object SumII {
         return result
     }
 }
-
-fun main() {
-    print(SumII.fourSumCount(
-        intArrayOf(1,2),
-        intArrayOf(-2,-1),
-        intArrayOf(-1,2),
-        intArrayOf(0,2)
-    ))
-}
